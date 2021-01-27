@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header */
 header{
   /* debug */
   height: 500px;
@@ -25,7 +30,6 @@ nav{
   /* debug */
   height: 100%;
   background-color: rgba(0, 255, 0, 0.5);
-  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
@@ -70,7 +74,6 @@ nav div{
 }
 
 header button{
-  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   color: white;
   border-radius: 4px;
@@ -97,42 +100,54 @@ button[name=piano]{
 
 .title h1{
   font-size: 45px;
+  font-weight: 500;
   line-height: 1.3em;
   margin-bottom: 30px;
 }
 
 .title button{
   padding: 20px;
+  font-size: 12px;
+}
 
+/* MAIN */
+main{
+  color: grey;
+}
+
+/* sub-header */
+section h3{
+  color: black;
+  margin-bottom: 10px;
+}
+
+section div:not(.box){
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 section:first-child{
-  /* debug */
   height: 120px;
   background-color: lightgrey;
 }
 
-section:after{
-  content: '';
-  display: table;
-  clear: both;
-}
+/* three-colums section */
 
 aside{
   float: left;
+  text-align: center;
 }
 
 #first aside{
-  /* debug */
   width: 30%;
-  height: 400px;
-  background-color: lightgrey;
 }
 
 #first aside:nth-child(2){
   margin: 0 5%;
-  /* debug */
-  background-color: green;
 }
 
 #second aside{
@@ -141,6 +156,32 @@ aside{
   height: 400px;
   background-color: lightgrey;
   margin: 0 5%;
+}
+
+aside img{
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+aside h3{
+  color: #7CBB02;
+  font-weight: 500;
+}
+aside hr{
+  width: 75px;
+  margin: 20px auto;
+
+}
+aside p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+section:after{
+  content: '';
+  display: table;
+  clear: both;
 }
 
 /* footer */
