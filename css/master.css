@@ -1,0 +1,73 @@
+/* GENERIC RULES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  /* debug */
+  height: 500px;
+  background-color: darkblue;
+}
+
+nav, .box{
+  margin: auto;
+}
+
+nav{
+  /* debug */
+  height: 80px;
+  background-color: lightgrey;
+}
+
+.box{
+  width: 60%;
+  /* debug */
+  height: 100%;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+section:first-child{
+  /* debug */
+  height: 120px;
+  background-color: lightgrey;
+}
+
+section:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+aside{
+  float: left;
+}
+
+#first aside{
+  /* debug */
+  width: 30%;
+  height: 400px;
+  background-color: lightgrey;
+}
+
+#first aside:nth-child(2){
+  margin: 0 5%;
+  /* debug */
+  background-color: green;
+}
+
+#second aside{
+  /* debug */
+  width: 40%;
+  height: 400px;
+  background-color: lightgrey;
+  margin: 0 5%;
+}
+
+/* footer */
+footer{
+  /* debug */
+  height: 120px;
+  background-color: darkblue;
+}
