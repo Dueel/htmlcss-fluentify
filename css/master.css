@@ -16,16 +16,69 @@ nav, .box{
 }
 
 nav{
-  /* debug */
-  height: 80px;
-  background-color: lightgrey;
+  height: 40px;
 }
 
 .box{
-  width: 60%;
+  width: 65%;
   /* debug */
   height: 100%;
   background-color: rgba(0, 255, 0, 0.5);
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+}
+
+nav img{
+ width: 120px;
+ vertical-align: middle;
+}
+
+nav ul, nav li{
+  display: inline-block;
+}
+
+nav ul{
+  margin: 0 50px;
+}
+
+nav li{
+  margin: 0 10px;
+}
+
+nav li:first-child{
+  margin-left: 0
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+}
+
+nav div{
+  height: 100%;
+  float: right;
+  line-height: 40px;
+}
+
+nav button{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: white;
+  border-radius: 4px;
+}
+
+button[name=login]{
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  margin: 0 20px;
+  padding: 5px 20px;
+}
+
+button[name=piano]{
+  background-color: #7CBB02;
+  border: none;
+  padding: 5px 10px;
 }
 
 section:first-child{
