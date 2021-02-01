@@ -11,7 +11,6 @@ body{
 
 /* header */
 header{
-  /* debug */
   height: 500px;
   color: white;
   background-color: #0C325A;
@@ -23,11 +22,11 @@ nav, .box{
 
 nav{
   height: 40px;
+  padding: 20px 0;
 }
 
 .box{
   width: 65%;
-  /* debug */
   height: 100%;
   position: relative;
 }
@@ -135,6 +134,9 @@ section:first-child{
 }
 
 /* three-colums section */
+#first, #second{
+  margin: 50px 0;
+}
 
 aside{
   float: left;
@@ -143,16 +145,13 @@ aside{
 
 #first aside{
   width: 30%;
+  padding: 0 10px;
 }
 
 #first aside:nth-child(2){
   margin: 0 5%;
 }
 
-#second aside{
-  width: 40%;
-  margin: 0 5%;
-}
 
 #first aside img{
   height: 150px;
@@ -164,12 +163,18 @@ aside h3{
   font-weight: 500;
 }
 
-aside:last-child{
+#second aside{
+  width: 35%;
+  margin: 0 calc(30% / 4);
+}
+
+#second aside:last-child{
   text-align: left;
 }
 
-aside h2{
+h2{
   color: black;
+  font-size: 32px;
   line-height: 1.5em;
 }
 
@@ -183,6 +188,7 @@ aside p{
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5em;
+  margin: 20px 0;
 }
 
 section:after{
@@ -193,7 +199,51 @@ section:after{
 
 /* footer */
 footer{
-  /* debug */
-  height: 120px;
-  background-color: darkblue;
+  height: 150px;
+  background-color: #D3D3D3;
+  position: relative;
+}
+
+footer .box>*{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer h2{
+  display: inline-block;
+}
+
+#cta{
+  float: right;
+}
+
+footer span{
+  color: #808080;
+  display: inline-block;
+}
+
+#search{
+  width: 150px;
+  margin: 0 15px;
+  border-bottom: 1px solid #808080;
+}
+
+.fa-sort-down{
+  float: right;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  padding: 20px 10px;
+  border-radius: 4px;
+  background-color: #7CBB02;
+}
+
+#help{
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 440px;
 }
